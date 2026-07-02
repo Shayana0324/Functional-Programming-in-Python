@@ -12,11 +12,17 @@ def calculate_discount(price, discount=10, tax=5):
 if __name__ == "__main__":
     price = 100
     discount, tax = 10, 5
-    final_price = calculate_discount(100)
+    final_price = calculate_discount(price)
     print("Final price:", final_price) # Final price: 94.5
     
     final_price = calculate_discount(60)
     print("Final price:", final_price) 
+    
+    final_price = calculate_discount(price, 20, tax)
+    print("Final price:", final_price)
+    
+    final_price = calculate_discount(price, discount, 6)
+    print("Final price:", final_price)
     
     final_price = calculate_discount(100, discount=15, tax=10)
     print("Final price:", final_price)
